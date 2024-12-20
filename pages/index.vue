@@ -20,8 +20,7 @@
 export default {
   methods: {
     handleClick(event) {
-      console.log("클릭 위치:", event.clientX, event.clientY);
-      // 원하는 로직 추가
+      console.log("Click Position:", event.clientX, event.clientY);
     },
   },
 };
