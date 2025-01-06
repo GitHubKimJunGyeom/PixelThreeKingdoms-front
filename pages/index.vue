@@ -4,10 +4,10 @@
       <v-row>
         <v-col class="d-flex justify-center">
           <video 
-            src="temp.mp4" 
-            controls 
-            autoplay 
-            loop 
+            src="../static/video/temp.mp4" 
+            controls
+            autoplay
+            loop
             class="video-player">
           </video>
         </v-col>
