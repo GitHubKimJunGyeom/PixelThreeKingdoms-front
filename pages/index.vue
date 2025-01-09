@@ -4,7 +4,6 @@
       <v-row>
         <v-col class="d-flex justify-center">
           <video 
-            src="../static/video/temp.mp4" 
             controls
             autoplay
             loop
