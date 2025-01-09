@@ -3,12 +3,13 @@
     <v-container class="fill-height d-flex align-center justify-center">
       <v-row>
         <v-col class="d-flex justify-center">
-          <video 
+          <p>PixelThreeKingDom Comming soon</p>
+          <!-- <video 
             controls
             autoplay
             loop
             class="video-player">
-          </video>
+          </video> -->
         </v-col>
       </v-row>
     </v-container>
