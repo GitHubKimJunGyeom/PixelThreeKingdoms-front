@@ -1,6 +1,11 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  server: {
+    port: process.env.PORT || 3000, // Render가 할당하는 포트를 사용
+    host: '0.0.0.0' // 외부 연결을 허용
+  },
+
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
