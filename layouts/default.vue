@@ -9,17 +9,17 @@
     >
       <v-list>
         <v-list-item
-          v-for="(item, i) in items"
+          v-for="(board, i) in boardList"
           :key="i"
-          :to="item.to"
+          :to="board.to"
           router
           exact
         >
           <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon>{{ board.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title>{{ board.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -66,6 +66,8 @@
 </template>
 
 <script>
+import { BOARD_LIST } from '~/modules/layout/board'; 
+
 export default {
   name: 'DefaultLayout',
   data () {
@@ -73,18 +75,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
+      boardList: BOARD_LIST,
       miniVariant: false,
       right: true,
       rightDrawer: false,

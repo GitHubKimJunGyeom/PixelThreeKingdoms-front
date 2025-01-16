@@ -1,10 +1,3 @@
-export const BOARD_LIST = {
-    patchNote,
-    programing,
-    guestBook,
-}
-
-
 export const TEXT_INFO = {
     KO: {
       PAGE_TITLE: '픽셀 삼국지',
