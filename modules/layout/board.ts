@@ -12,6 +12,6 @@ export const BOARD_LIST = [
     {
       icon: 'mdi-chart-bubble',
       title: 'guestBook',
-      to: '/board/guestBook'
+      to: '/board/guest_book'
     }
 ]
