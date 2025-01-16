@@ -25,6 +25,17 @@
   
   <script>
   export default {
+    head() {
+      return {
+        script: [
+          {
+            src: 'https://apis.google.com/js/platform.js',
+            async: true,
+            defer: true
+          }
+        ]
+      }
+    },
     mounted() {
       this.initGoogleAuth();
     },
@@ -79,6 +90,3 @@
     margin-top: 20px;
   }
   </style>
-  
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
-  
